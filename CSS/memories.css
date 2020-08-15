@@ -1,0 +1,161 @@
+body{
+	margin: 0;
+	padding:2px;
+}
+header{
+	background-color: #D3D3D3;
+	position: static;
+	width:100%;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+    width: 13.3%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 100%;
+    display: inline-block;
+  }
+nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding-left: 15px;
+  font-size:150%;
+  transition: 0.5s background-color text-decoration;
+}
+
+nav a:hover {
+  background-color: #000;
+  text-decoration: underline;
+}
+
+nav a.Active {
+  background-color: #000;
+  color: #FFF;
+  cursor: default;
+}
+
+/* Sub Menus */
+nav li li {
+  font-size: .8em;
+}
+
+nav > ul > li {
+   text-align: center;
+}
+
+nav > ul > li > a {
+    padding-left: 0;
+}
+
+/* Sub Menus */
+nav li ul {
+    position: absolute;
+    display: none;
+    width: inherit;
+}
+
+nav li:hover ul {
+   display: block;
+   background-color: #D3D3D3;
+}
+
+nav li ul li {
+   display: block;
+   width:100%;
+   text-align: center;
+   transitio:0.5s background-color;
+ }
+ nav li ul li:hover{
+ 	background-color: #000;
+ }
+h1{
+	text-align: center;
+	font-size: 250%;
+	font-family: "Georgia",'Sanchez', serif;
+	text-decoration: underline;
+
+}
+
+
+
+img{
+	display:block;
+	border: 1px solid #ddd;
+  	border-radius: 4px;
+  	padding: 0.9%;
+  	margin-left: auto;
+	margin-right: auto;
+	width:90%;
+  /*object-fit: cover;
+  height: 600px;
+  float: left;*/
+  
+
+
+}
+
+@media screen and (min-width: 750px){
+img{
+  display: inline-block;
+  width:45%;
+  float: left;
+}
+}
+
+@media screen and (min-width: 1050px){
+img{
+  display: inline-block;
+    width:23%;
+  float: left;
+}
+}
+
+h2{
+  text-align: center;
+  font-size: 250%;
+  font-family: "Georgia",'Sanchez', serif;  
+  clear: both;
+}
+
+/*img{
+  display: inline-block;
+    border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width:20%;
+
+}*/
+
+footer{
+  display: block;
+	margin-bottom:0px;
+	width:100%;
+	background-color: #D3D3D3;
+	font-size: 200%;
+	text-align: center;
+	font-family: "Georgia",'Sanchez', serif;
+	position: static;
+  clear: both;
+  bottom: 0;
+
+}
+
+footer i{
+	margin: 5px;
+	margin-top:0;
+	padding: 0;
+  color: #000;
+}
+
+footer p{
+	margin:10px;
+	padding:0;
+}
+
